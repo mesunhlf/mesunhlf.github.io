@@ -47,15 +47,18 @@
       <section class="probootstrap-animate">
         <h1 class="mb-4 text-primary">UPA2</h1>
         <p class="lead">
-        	In this paper, we study the problem of physical camouflage attacks on object detectors in the wild.
-	        Particularly, we learn universal camouflage patterns which hide objects with a specific category from being detected by the proposal-based object detector. 
-            To fairly evaluate the effectiveness of different physical-world attacks on object detectors, we collect the first standardized dataset, 
-            named AttackScenes, which simulates the real 3D world in a controllable and reproducible environment.
-            Our extensive experiments show that the learned universal camouflage patterns can hide different objects from the proposal-based object detectors 
-            not only in the virtual environment(AttackScenes), but also in real-world physical environments. Moreover, the proposed method can easily generalize 
-            to various objects, and the strong attacks can transfer to other detection models under black-box scenario.
+		In this paper, we study physical adversarial attacks on object detectors in the wild. Former attacks in this category were mostly single-object based and performed under inreproducible environments.
+		To this end, we propose Universal Physical Camouflage Attack (UPC), which learns universal patterns that can successfully fool object detectors by attacking a category of objects simultaneously.
+        Such camouflages are crafted by jointly fooling the region proposal network, 
+		as well misleading the classifier and bounding-box regression to output wrong predictions. In order to make UPC more realistic for physical environments, we introduce additional transformations for the generated camouflage patterns to simulate the deformable behaviour of non-rigid or non-planar objects.
+		Additionally, we impose semantic constraint for optimization so that the generated patterns exhibit strong semantics which are visually consistent with natural images.
+        For the purpose of fair comparison, we present the first yet standardized virtual database, AttackScenes, which simulates the real 3D world in a controllable and reproducible environment.
+		Extensive experiments suggest the superiority of our proposed UPC compared with existing physical adversarial attackers not only in virtual environments (AttackScenes), but also in real-world physical environments.
         </p>
-
+		
+		<h3 class="mb-5">Demo</h3>
+		<video src="video/demo.mp4" controls=“controls” width="480"></video>
+		
         <h3 class="mb-5">AttackScenes Dataset</h3>
         <p>
         	Requirements: Autodesk 3dsMax 2018; V-ray 3.6
