@@ -23,14 +23,14 @@ html {
 body {
   font-family: "Work Sans", Arial, sans-serif;
   background: #F4F9F4;
-  margin-left: calc(50% + 5rem);
-  margin-right: 8rem;
+  margin-left: calc(20% + 5rem);
+  margin-right: calc(20% + 5rem);
   font-size: 16px;
   color: rgba(0, 0, 0, 0.75); }
   @media screen and (max-width: 1431px) {
     body {
-      margin-left: calc(50% + 40px);
-      margin-right: 5rem; } }
+      margin-left: calc(20% + 40px);
+      margin-right: calc(20% + 5rem); } }
   @media screen and (max-width: 1003px) {
     body {
       margin-left: 0;
