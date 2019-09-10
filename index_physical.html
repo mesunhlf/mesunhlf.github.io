@@ -48,13 +48,14 @@
       <section class="probootstrap-animate">
         <h1 class="mb-4 text-primary">UPA2</h1>
         <p class="lead">
-		In this paper, we study physical adversarial attacks on object detectors in the wild. Former attacks in this category were mostly single-object based and performed under inreproducible environments.
-		To this end, we propose Universal Physical Camouflage Attack (UPC), which learns universal patterns that can successfully fool object detectors by attacking a category of objects simultaneously.
-        Such camouflages are crafted by jointly fooling the region proposal network, 
-		as well misleading the classifier and bounding-box regression to output wrong predictions. In order to make UPC more realistic for physical environments, we introduce additional transformations for the generated camouflage patterns to simulate the deformable behaviour of non-rigid or non-planar objects.
-		Additionally, we impose semantic constraint for optimization so that the generated patterns exhibit strong semantics which are visually consistent with natural images.
-        For the purpose of fair comparison, we present the first yet standardized virtual database, AttackScenes, which simulates the real 3D world in a controllable and reproducible environment.
-		Extensive experiments suggest the superiority of our proposed UPC compared with existing physical adversarial attackers not only in virtual environments (AttackScenes), but also in real-world physical environments.
+		In this paper, we study physical adversarial attacks on object detectors in the wild. Prior arts on this matter mostly craft instance-dependent perturbations only for rigid and planar objects.
+		To this end, we propose to learn an adversarial pattern to effectively attack <b>all instances belonging to the same object category</b> (e.g., person, car), referred to as Universal Physical Camouflage Attack (UPC).
+		Concretely, UPC crafts camouflage by jointly fooling the region proposal network, 
+		as well as misleading the classifier and the regressor to output errors. In order to make UPC effective for articulated non-rigid or non-planar objects, we introduce a set of transformations for the generated camouflage patterns to mimic their deformable properties.
+		We additionally impose optimization constraint to make generated patterns look natural for human observers.
+		To fairly evaluate the effectiveness of different physical-world attacks on object detectors,
+		we present the first standardized virtual database, <b>AttackScenes</b>, which simulates the real 3D world in a controllable and reproducible environment.
+		Extensive experiments suggest the superiority of our proposed UPC compared with existing physical adversarial attackers not only in virtual environments (<b>AttackScenes</b>), but also in real-world physical environments.
         </p>
 		
 		<h3 class="mb-5">Demo</h3>
