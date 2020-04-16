@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @media print {
-  *,
+  *,.lead
   *::before,
   *::after {
     text-shadow: none !important;
@@ -6574,7 +6574,7 @@ a.bg-navy:focus, a.bg-navy:hover {
   color: #fff !important; }
 
 .text-primary {
-  color: #F96D00 !important; }
+  color: #000 !important; }
 
 a.text-primary:focus, a.text-primary:hover {
   color: #c65700 !important; }
