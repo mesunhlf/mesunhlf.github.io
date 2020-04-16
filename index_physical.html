@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,33 +24,79 @@
 	</head>
 	<body>
     
-    <header class="probootstrap-header">
-      <a class="probootstrap-logo" href="index.html">
-        <h1>Frontiers</h1>
-      </a>
-      <nav class="probootsrap-nav">
-        <ul>
-          <li class="active"><a href="UPA_index.html">Home</a></li>
-          <!--
-          <li><a href="what-we-do.html">What We Do</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          -->
-        </ul>
-      </nav>
-    </header>
-    
     <main class="probootstrap-main">
 	<!--
       <section class="probootstrap-bg probootstrap-animate" data-animate-effect="fadeInLeft" style="background-image: url(img/virtual_scenes.jpg);"></section>
     -->
 
       <section class="probootstrap-animate">
-        <h1 class="mb-4 text-primary">UPC: Learning Universal Physical Camouflage Attack on Object Detectors</h1>
+        <h1 class="mb-4 text-primary" align="center">
+        	Learning Universal Physical Camouflage Attack on Object Detectors
+        </h1>
+        
+        <h4 class="mb-5">
+        	<table align="center">
+        		<tbody>
+        			<tr>
+        				<td width="250px" align="center">
+        					Code [<a href="https://github.com/mesunhlf/UPC-tf">Github</a>]
+        				</td>
+        				<td width="250px" align="center">
+        					Arxiv [<a href="https://arxiv.org/abs/1909.04326v1">Paper</a>]
+        				</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        </h4>
+        
+        <h3 class="mb-5">Abstract</h3>
         <p class="lead">
 		In this paper, we study physical adversarial attacks on object detectors in the wild. Prior arts on this matter mostly craft instance-dependent perturbations only for rigid and planar objects.
 		To this end, we propose to learn an adversarial pattern to effectively attack <b>all instances belonging to the same object category</b> (e.g., person, car), referred to as Universal Physical Camouflage Attack (UPC).
 		Concretely, UPC crafts camouflage by jointly fooling the region proposal network, 
+		as well as misleading the classifier and the regressor to output errors. In order to make UPC effective for articulated non-rigid or non-planar objects, we introduce a set of transformations for the generated camouflage patterns to mimic their deformable properties.
+		We additionally impose optimization constraint to make generated patterns look natural for human observers.
+		To fairly evaluate the effectiveness of different physical-world attacks on object detectors,
+		we present the first standardized virtual database, <b>AttackScenes</b>, which simulates the real 3D world in a controllable and reproducible environment.
+		Extensive experiments suggest the superiority of our proposed UPC compared with existing physical adversarial attackers not only in virtual environments (<b>AttackScenes</b>), but also in real-world physical environments.
+        </p>
+		
+		<h3 class="mb-5">Demo</h3>
+		<p align="center">
+		<video src="video/demo.mp4" controls=“controls” width="600"></video>
+		</p>
+		
+		<h3 class="mb-5">Examples</h3>
+		<p align="center">
+		<img src="img/virtual_scenes.jpeg" width="720"><img />	
+		</p>
+		
+        <h3 class="mb-5">AttackScenes Dataset</h3>
+        <p>
+        	Requirements: Autodesk 3dsMax 2018; V-ray 3.6
+        </p>
+        <p>
+        	Download link: <a href="https://drive.google.com/open?id=1tmzQj7Dm4zO4ROThDjJM5pJDrHMR2dWn">Click Here.</a>
+        </p>
+        <p>
+        
+      </section>
+
+    </main>
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <script src="assets/js/main.js"></script>
+	</body>
+</html>network, 
 		as well as misleading the classifier and the regressor to output errors. In order to make UPC effective for articulated non-rigid or non-planar objects, we introduce a set of transformations for the generated camouflage patterns to mimic their deformable properties.
 		We additionally impose optimization constraint to make generated patterns look natural for human observers.
 		To fairly evaluate the effectiveness of different physical-world attacks on object detectors,
